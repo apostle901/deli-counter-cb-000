@@ -1,9 +1,12 @@
 # Write your code here.
 def line (array)
-  return "The line is currently empty." if array.nil?
-  temp = "The line is currently:"
-  array.each_with_index {|x, i| temp << " #{i+1}. #{x}"}
-  temp
+  if array.nil?
+    puts "The line is currently empty."
+  else
+    temp = "The line is currently:"
+    array.each_with_index {|x, i| temp << " #{i+1}. #{x}"}
+    puts temp
+  end
 end
 
 def take_a_number (array, name)
