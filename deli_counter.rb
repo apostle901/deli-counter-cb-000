@@ -1,6 +1,6 @@
 # Write your code here.
 def line (array)
-  if array.nil?
+  if array.empty?
     puts "The line is currently empty."
   else
     temp = "The line is currently:"
@@ -15,5 +15,5 @@ def take_a_number (array, name)
 end
 
 def now_serving (array)
-  array.nil? ? "There is nobody waiting to be served!" : "Currently serving #{array.shift}"
+  array.empty? ? "There is nobody waiting to be served!" : "Currently serving #{array.shift}"
 end
